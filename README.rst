@@ -23,5 +23,5 @@ Available states
 ``thrift.languages``
 ---------
 
-  Install necessary requirements for Thrift languages. Currently only supports Ubuntu but requirements can be gathered from `Apache <http://thrift.apache.org/docs/install/ubuntu>`_.
+  Install necessary requirements for Thrift languages. Currently only supports Ubuntu but requirements can be `gathered from Apache <http://thrift.apache.org/docs/install/ubuntu>`_.
 
