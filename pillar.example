@@ -1,0 +1,4 @@
+thrift:
+  language_requirements:
+    - python
+    - ruby

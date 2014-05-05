@@ -1,0 +1,26 @@
+{% set thrift = salt['grains.filter_by']({
+    'Debian': {
+         'build_requirements': [ 'build-essential', 'libboost-dev', 'libboost-test-dev', 'libboost-program-options-dev', 'libevent-dev', 'automake', 'libtool', 'flex', 'bison', 'pkg-config', 'g++', 'libssl-dev' ],
+        'thrift_version': 'thrift-0.9.1',
+        'thrift_tar_url': 'http://www.apache.org/dist/thrift/0.9.1/thrift-0.9.1.tar.gz',
+        'thrift_md5': 'https://www.apache.org/dist/thrift/0.9.1/thrift-0.9.1.tar.gz.md5',
+        'service_account': 'vagrant',
+        'language_requirements': [ ],
+        'ruby_requirements': ['ruby-full', 'ruby-dev', 'ruby-rspec', 'rake', 'rubygems', 'libdaemons-ruby', 'libgemplugin-ruby', 'mongrel'],
+        'python_requirements': ['python-all', 'python-all-dev', 'python-all-dbg'],
+        'perl_requirements': ['libbit-vector-perl', 'libclass-accessor-class-perl'],
+        'php_requirements': ['php5-dev', 'php5-cli', 'phpunit'],
+        'c_glib_requirements': ['libglib2.0-dev'],
+        'erlang_requirements': ['erlang-base', 'erlang-eunit', 'erlang-dev'],
+        'csharp_requirements': ['mono-gmcs', 'mono-devel', 'libmono-system-web2.0-cil', 'nunit', 'nunit-console'],
+        'haskell_requirements': ['ghc6', 'cabal-install', 'libghc6-binary-dev', 'libghc6-network-dev', 'libghc6-http-dev'],
+        'windows_requirements': ['mingw32', 'mingw32-binutils', 'mingw32-runtime'],
+    },
+    'RedHat': {
+        'build_requirements': [ 'automake', 'libtool', 'flex', 'bison', 'pkgconfig', 'gcc-c++', 'boost-devel', 'libevent-devel', 'zlib-devel', 'python-devel', 'ruby-devel' ],
+        'thrift_version': 'thrift-0.9.1',
+        'thrift_tar_url': 'http://www.apache.org/dist/thrift/0.9.1/thrift-0.9.1.tar.gz',
+        'thrift_md5': 'https://www.apache.org/dist/thrift/0.9.1/thrift-0.9.1.tar.gz.md5',
+        'service_account': 'ec2-user'
+    },
+}, merge=salt['pillar.get']('thrift')) %}
