@@ -7,7 +7,7 @@ Install the Apache Thrift software framework
 .. note::
 
     See the full `Salt Formulas installation and usage instructions
-    <http://docs.saltstack.com/topics/conventions/formulas.html>`_.
+    <http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html>`_.
 
 Available states
 ================
@@ -23,5 +23,5 @@ Available states
 ``thrift.languages``
 ---------
 
-  Install necessary requirements for Thrift languages. Currently only supports Ubuntu but requirements can be `gathered from Apache <http://thrift.apache.org/docs/install/ubuntu>`_.
+  Install necessary requirements for Thrift languages. Currently only supports Ubuntu but requirements can be `gathered from Apache <http://thrift.apache.org/docs/install/debian>`_.
 
