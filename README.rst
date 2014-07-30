@@ -18,10 +18,10 @@ Available states
 ``thrift``
 ---------
 
-  This formula will download and compile Apache Thrift as well as installing all of it's `necessary requirements <http://thrift.apache.org/docs/install/>`_.
+This formula will download and compile Apache Thrift as well as installing all of it's `necessary requirements <http://thrift.apache.org/docs/install/>`_.
 
 ``thrift.languages``
 ---------
 
-  Install necessary requirements for Thrift languages. Currently only supports Ubuntu but requirements can be `gathered from Apache <http://thrift.apache.org/docs/install/debian>`_.
+Install necessary requirements for Thrift languages. Currently only supports Ubuntu but requirements can be `gathered from Apache <http://thrift.apache.org/docs/install/debian>`_.
 
